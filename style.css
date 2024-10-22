@@ -1,0 +1,189 @@
+
+body {
+    background-color: black;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+#container, #container1 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rectangle {
+    text-align: center;
+}
+
+.rectangle1 {
+    float: left;
+    width: 500px;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.00);
+    }
+}
+
+.rectangle2,
+.rectangle3 {
+    margin: 10px;
+    width: 480px;
+    float: left;
+    text-align: left;
+    background-color: rgb(51, 51, 51);
+    border-radius: 5px;
+}
+
+.rectangle2 {
+    height: 480px;
+}
+
+.rectangle3 {
+    height: 100px;
+}
+
+.rectangle4 {
+    width: 500px;
+    height: 120px;
+    float: left;
+    text-align: left;
+}
+
+#logo, #time {
+    float: left;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.tile4 {
+    margin: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    animation: fadeIn 0.5s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.tile5 {
+    margin: 20px;
+    margin-top: 0px;
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.footer {
+    margin: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.yt,
+.fb,
+.gplus,
+.tw {
+    margin: 10px;
+    width: 105px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.icon-youtube-squared {
+    font-size: 120px;
+    color: rgb(255, 0, 0);
+}
+
+.icon-facebook-squared {
+    font-size: 120px;
+    color: rgb(66, 103, 178);
+}
+
+.icon-gplus-squared {
+    font-size: 120px;
+    color: rgb(221, 75, 57);
+}
+
+.icon-twitter-squared {
+    font-size: 120px;
+    color: rgb(29, 161, 242);
+}
+
+.tile,
+.tile1,
+.tile2,
+.tile3 {
+    margin: 10px;
+    width: 230px;
+    height: 230px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.tile,
+.tile1 {
+    background-color: brown;
+}
+
+.tile2 {
+    background-color: green;
+}
+
+.tile3 {
+    background-color: orangered;
+}
+
+.icon-user-secret,
+.icon-desktop,
+.icon-graduation-cap,
+.icon-mail {
+    font-size: 140px;
+    transform: translate(0px, 0px);
+    color: black;
+}
+
+.icon-graduation-cap {
+    transform: translate(-18px, 0px);
+}
+
+.tile:hover,
+.tile1:hover,
+.tile2:hover,
+.tile3:hover,
+.fb:hover,
+.gplus:hover,
+.tw:hover,
+.yt:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+

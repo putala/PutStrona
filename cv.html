@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/css/fontello.css">
+    <title>Moja Strona</title>
+</head>
+<body>
+    <div id="container">
+        <div class="rectangle">
+            <div id="logo">M_____ P_____</div>
+            <div id="time">00:00:00</div>
+        </div>
+    </div>
+    <script>
+        // Funkcja do aktualizacji godziny
+        function updateTime() {
+            const timeElement = document.getElementById("time");
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');      // Zawsze 2 cyfry dla godzin
+            const minutes = now.getMinutes().toString().padStart(2, '0');  // Zawsze 2 cyfry dla minut
+            const seconds = now.getSeconds().toString().padStart(2, '0');  // Zawsze 2 cyfry dla sekund
+            timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        // Aktualizacja godziny co 1 sekundę (1000 milisekund)
+        setInterval(updateTime, 1000);
+        updateTime(); // Pierwsze wywołanie natychmiastowe
+    </script>
+    <div id="container1">
+        <div class="rectangle1">
+            <a href="index.html">
+                <div class="tile"> 
+                    <i class="icon-user-secret"></i>
+                    Kim jestem?
+                </div>
+            </a>
+            <a href="co-oferuje.html">
+                <div class="tile1">
+                    <i class="icon-desktop"></i>
+                    Co oferuję?
+                </div>
+            </a>
+            <a href="cv.html">
+                <div class="tile2">
+                    <i class="icon-graduation-cap"></i>
+                    Curriculum vitae
+                </div>
+            </a>
+            <a href="kontakt.html">
+                <div class="tile3">
+                    <i class="icon-mail"></i>
+                    Kontakt ze mną
+                </div>
+            </a>
+        </div>
+        <div class="rectangle2">
+            <div class="tile4">
+                <b>Curriculum vitae</b> <br><br>
+                Wykształcenie:<br>
+                Kilka kierunków studiów, praktyka zawodowa oraz doświadczenie jako programista przy projektach komercyjnych.<br><br>
+                Własne projekty:<br>
+                AI - Aplikacja oparta na sztucznej inteligencji. Aplikacja służąca do analizy danych i wyciągania wniosków na ich podstawie.<br>
+                Program do grafiki 3D - Program do modelowania 3D, wykorzystujący technologię OpenGL.
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        <div class="rectangle3">
+            <div class="tile5">
+                "Gdy wszyscy wiedzą, że coś jest niemożliwe, przychodzi ktoś, kto o tym nie wie i to robi" - Albert Einstein
+            </div>
+        </div>
+        <div class="rectangle4">
+            <a href="https://www.youtube.com/">
+                <div class="yt"><i class="icon-youtube-squared"></i></div>
+            </a>
+            <a href="https://www.facebook.com/">
+                <div class="fb"><i class="icon-facebook-squared"></i></div>
+            </a>
+            <a href="https://www.wikipedia.org/wiki/Google%2B">
+                <div class="gplus"><i class="icon-gplus-squared"></i></div>
+            </a>
+            <a href="https://www.x.com">
+                <div class="tw"><i class="icon-twitter-squared"></i></div>
+            </a>
+        </div>
+        <div style="clear:both"></div>
+        <div class="footer">
+            2024 &copy; M_____ P_____ - Portfolio... Wszelkie prawa zastrzeżone...
+        </div>
+    </div>
+</body>
+</html>
+
+
